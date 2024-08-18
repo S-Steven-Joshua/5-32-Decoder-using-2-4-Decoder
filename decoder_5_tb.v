@@ -1,31 +1,8 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 18.08.2024 14:25:01
-// Design Name: 
-// Module Name: decoder_5_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 module decoder_5to32_tb();
     reg [4:0] A;           // 5-bit input
     wire [31:0] Y;         // 32-bit output
-
-    // Instantiate the 5-to-32 Decoder
     decoder_5to32 uut (.A(A), .Y(Y));
-
     initial begin
         // Apply all possible input combinations
         A = 5'b00000; #10;
